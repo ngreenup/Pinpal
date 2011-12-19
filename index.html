@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+	<head>
+		<title>PinPal</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		<meta charset="utf-8">
+
+		<script type="text/javascript" charset="utf-8" src="scripts/jquery-1.7.1.min.js"></script> 
+		<script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
+		<script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.0.min.js"></script>
+
+
+		<!-- <link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.0.min.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0.min.css" /> -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile.structure-1.0.css" /> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.0.css" />
+	</head>
+	
+	<body class="ui-mobile-viewport" onload="window.scrollTo(0, 1);" style="min-height:510px;">
+		<div data-role="page" class="type-interior">
+			<div data-role="header" data-theme="d">
+			<h1>Choose Type</h1>
+			<a href="../../" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+			</div><!-- /header -->
+			<div data-role="content">
+				<div class="content-primary">
+					<ul data-role="listview">
+						<li>
+							<h3>Solid State</h3>
+							<p>SS machines have digital displays that power up when the machine is turned on.</p>
+							<ul data-role="listview" data-filter="true" data-filter-placeholder="Search for title or abbreviations..." data-filter-theme="b"> 
+								<li data-role="list-divider">A</li>
+								<li>A.G. Football
+									<div style="font-weight:normal;font-size:75%;">Mfg: 1992 by Alvin G - 2 Players</div>
+									<span class="ui-li-count">500 Made</span>
+								</li>
+								<li>A.G. Soccer-Ball
+									<div style="font-weight:normal;font-size:75%;">Mfg: 1991 by Alvin G - 2 Players</div>
+									<span class="ui-li-count">500 Made</span>
+								</li>
+								<li>Agents 777
+									<div style="font-weight:normal;font-size:75%;">Mfg: 1984 by Gampe Plan - 2 Players</div>
+									<span class="ui-li-count">400 Made</span>
+								</li>
+								<li>Airborne
+									<div style="font-weight:normal;font-size:75%;">Mfg: 1996 by Capcom - 4 Players</div>
+									<span class="ui-li-count">1350 Made</span>
+								</li>
+								<li>Airborne Avenger
+									<div style="font-weight:normal;font-size:75%;">Mfg: 1977 by Atari - 4 Players</div>
+									<span class="ui-li-count">350 Made</span>
+								</li>
+								<li>Al's Garage Band Goes On a World Tour
+									<div style="font-weight:normal;font-size:75%;">Mfg: 1992 by Alvin G - 4 Players</div>
+									<span class="ui-li-count">1000 Made</span>
+								</li>
+								<li>Algar</li>
+								<li>Ali</li>
+								<li>Alien Poker</li>
+								<li>Alien Star</li>
+								<li>Amazon Hunt</li>
+								<li>Amazon Hunt II</li>
+								<li>Amazon Hunt III</li>
+								<li>Andromeda</li>
+								<li>Apocalypse Now</li>
+								<li>Arena</li>
+								<li>Asteroid Annie and the Aliens</li>
+								<li>Atlantis</li>
+								<!-- How to add additional data for searchings with filter (data-filtertext=) -->
+								<li data-filtertext="AFM">Attack from Mars</li>
+								<li>Attila the Hun</li>
+								
+								<li data-role="list-divider">B</li>
+								<li>Baby Pac-Man</li>
+								<li>Back to the Future</li>
+								<li>Bad Cats</li>
+								<li>Bad Girls</li>
+								<li>Banzai Run</li>
+								<li>Barb Wire</li>
+								<li>Barracora</li>
+								<li>Batman Forever</li>
+								<li>Beat the Clock</li>
+								<li>Bell Ringer</li>
+								<li>Big Bang Bar</li>
+								<li>Big Game</li>
+								<li>Big Guns</li>
+								<li>Big House</li>
+								<li>Black Belt</li>
+								<li>Black Hole</li>
+								<li>Black Jack</li>
+								<li>Black Knight</li>
+								<li>Black Knight 2000</li>
+								<li>Black Knight Limited Edition</li>
+								<li>Black Pyramid</li>
+								<li>Black Rose</li>
+								<li>Black Spider-Man™</li>
+								<li>Blackout</li>
+								<li>Blackwater 100</li>
+								<li>BMX</li>
+								<li>Bone Busters Inc.</li>
+								<li>Bounty Hunter</li>
+								<li>Bram Stoker's Dracula</li>
+								<li>Breakshot</li>
+								<li>Buck Rogers</li>
+								<li>Bugs Bunny's Birthday Ball</li>
+								
+								<li data-role="list-divider">C</li>
+								<li>Cactus Canyon</li>
+								<li>Cactus Jack's</li>
+								<li>Captain Hook</li>
+								<li>Car Hop</li>
+								<li>Caribbean Cruise</li>
+								<li>Caveman</li>
+								<li>Centaur</li>
+								<li>Centaur II</li>
+								<li>Charlie's Angels</li>
+								<li>Cheetah</li>
+								<li>Chicago Cubs "Triple Play"</li>
+								<li>Circus</li>
+								<li>Cirqus Voltaire</li>
+								<li>City Slicker</li>
+								<li>Class of 1812</li>
+								<li>Cleopatra</li>
+								<li>Close Encounters of the Third Kind</li>
+								<li>Comet</li>
+								<li>Congo</li>
+								<li>Contact</li>
+								<li>Continental</li>
+								<li>Corvette</li>
+								<li>Cosmic Gunfight</li>
+								<li>Cosmic Princess</li>
+								<li>Count-Down</li>
+								<li>Counterforce</li>
+								<li>Creature from the Black Lagoon</li>
+								<li>Cue Ball Wizard</li>
+								<li>Cybernaut</li>
+								<li>Cyclone</li>
+								<li>Cyclopes</li>
+								
+								<li data-role="list-divider">D</li>
+								<li>Dale Jr.</li>
+								<li>Dark Rider</li>
+								<li>Deadly Weapon</li>
+								<li>Defender</li>
+								<li>Demolition Man</li>
+								<li>Devil's Dare</li>
+								<li>Diamond Lady</li>
+								<li>Diner</li>
+								<li>Dino Turbo</li>
+								<li>Dinosaur Eggs</li>
+								<li>Dirty Harry</li>
+								<li>Disco Fever</li>
+								<li>Doctor Who</li>
+								<li>Dolly Parton</li>
+								<li>Dr. Dude</li>
+								<li>Dracula</li>
+								<li>Dragon</li>
+								<li>Dungeons & Dragons</li>
+								
+								<li data-role="list-divider">E</li>
+								<li>Eclipse</li>
+								<li>Eight Ball</li>
+								<li>Eight Ball Champ</li>
+								<li>Eight Ball Deluxe</li>
+								<li>Eight Ball Deluxe Limited Edition</li>
+								<li>El Dorado City of Gold</li>
+								<li>Elektra</li>
+								<li>Elvira and the Party Monsters</li>
+								<li>Embryon</li>
+								<li>Escape from the Lost World</li>
+								<li>Evel Knievel</li>
+								<li>Evolution</li>
+								<li>Excalibur</li>
+								
+								<li data-role="list-divider">F</li>
+								<li>F-14 Tomcat</li>
+								<li>Fathom</li>
+								<li>Fire!</li>
+								<li>Fire! Champagne Edition</li>
+								<li>Fireball</li>
+								<li>Fireball Classic</li>
+								<li>Fireball II</li>
+								<li>Firepower</li>
+								<li>Firepower II</li>
+								<li>Fish Tales</li>
+								<li>Flash</li>
+								<li>Flash Gordon</li>
+								<li>Flight 2000</li>
+								<li>Flipper Football</li>
+								<li>Fly High</li>
+								<li>Force II</li>
+								<li>Frank Thomas' Big Hurt™</li>
+								<li>Freddy: a Nightmare on Elm Street</li>
+								<li>Freedom</li>
+								<li>Freefall</li>
+								<li>Frontier</li>
+								<li>Funhouse</li>
+								<li>Future Spa</li>
+								
+								<li data-role="list-divider">G</li>
+								<li>Galaxy</li>
+								<li>Genesis</li>
+								<li>Genie</li>
+								<li>Gilligan's Island</li>
+								<li>Gladiators</li>
+								<li>Gold Ball</li>
+								<li>Gold Wings</li>
+								<li>Goldeneye</li>
+								<li>Gorgar</li>
+								<li>Grand Lizard</li>
+								<li>Grand Slam</li>
+								<li>Guns N' Roses</li>
+								
+								<li data-role="list-divider">H</li>
+								<li>Hardbody</li>
+								<li>Harlem Globetrotters On Tour</li>
+								<li>Harley-Davidson® (2nd Edition)</li>
+								<li>Haunted House</li>
+								<li>Heavy Metal Meltdown</li>
+								<li>High Speed</li>
+								<li>Hollywood Heat</li>
+								<li>Hook</li>
+								<li>Hoops</li>
+								<li>Hot Hand</li>
+								<li>Hot Shots</li>
+								<li>Hot Tip</li>
+								<li>Hotdoggin'</li>
+								<li>Howzat!</li>
+								<li>Hyperball</li>
+								
+								<li data-role="list-divider">I</li>
+								<li>Ice Fever</li>
+								<li>Independence Day</li>
+								<li>Indiana Jones: The Pinball Adventure</li>
+								<li>Indianapolis 500</li>
+								<li>Iron Maiden</li>
+								
+								<li data-role="list-divider">J</li>
+								<li>Jack·Bot</li>
+								<li>Jacks to Open</li>
+								<li>James Bond 007</li>
+								<li>James Cameron’s Avatar Limited Edition</li>
+								<li>Johnny Mnemonic</li>
+								<li>Joker Poker</li>
+								<li>Joust</li>
+								<li>Judge Dredd</li>
+								<li>Jungle Lord</li>
+								<li>Junk Yard</li>
+								<li>Jurassic Park</li>
+								
+								<li data-role="list-divider">K</li>
+								<li>Kings of Steel</li>
+								<li>Kiss</li>
+								
+								<li data-role="list-divider">L</li>
+								<li>L' Hexagone</li>
+								<li>La Retata</li>
+								<li>Lady Death</li>
+								<li>Lady Luck</li>
+								<li>Lady Sharpshooter</li>
+								<li>Laser Ball</li>
+								<li>Laser Cue</li>
+								<li>Last Action Hero</li>
+								<li>Le Grand 8</li>
+								<li>Le King</li>
+								<li>Lectronamo</li>
+								<li>Lightning</li>
+								<li>Lights...Camera...Action!</li>
+								<li>Little Pro</li>
+								<li>Lost In Space</li>
+								<li>Lost World</li>
+								<li>Lucky Seven</li>
+								
+								<li data-role="list-divider">M</li>
+								<li>Magic</li>
+								<li>Magic Eight</li>
+								<li>Mario Andretti</li>
+								<li>Mars God of War</li>
+								<li>Mary Shelley's Frankenstein</li>
+								<li>Mata Hari</li>
+								<li>Medieval Madness</li>
+								<li>Medusa</li>
+								<li>Memory Lane</li>
+								<li>Meteor</li>
+								<li>Millionaire</li>
+								<li>Miss World</li>
+								<li>Monopoly</li>
+								<li>Monster Bash</li>
+								<li>Monte Carlo</li>
+								<li>Motordome</li>
+								<li>Mr. & Mrs. Pac-Man Pinball</li>
+								<li>Mystery Castle</li>
+								<li>Mystic</li>
+								
+								<li data-role="list-divider">N</li>
+								<li>NBA Fastbreak</li>
+								<li>Night Rider</li>
+								<li>Nine Ball</li>
+								<li>Nitro Ground Shaker</li>
+								<li>No Fear: Dangerous Sports</li>
+								<li>No Good Gofers</li>
+								<li>Nugent</li>
+								
+								<li data-role="list-divider">O</li>
+								<li>Old Coney Island!</li>
+								<li>Olympic Games</li>
+								<li>Operation: Thunder</li>
+								<li>Orbit 1</li>
+								<li>Orbitor 1</li>
+
+								<li data-role="list-divider">P</li>
+								<li>Panthera</li>
+								<li>Papillon</li>
+								<li>Paragon</li>
+								<li>Party Animal</li>
+								<li>Phantom of the Opera</li>
+								<li>Pharaoh</li>
+								<li>Phoenix</li>
+								<li>PIN·BOT</li>
+								<li>Pinball</li>
+								<li>Pinball Lizard</li>
+								<li>Pinball Magic</li>
+								<li>Pinball Pool</li>
+								<li>Pink Panther</li>
+								<li>Pistol Poker</li>
+								<li>Playboy</li>
+								<li>Pokerino</li>
+								<li>Police Force</li>
+								<li>Popeye Saves the Earth</li>
+								<li>Power Play</li>
+								<li>Punchy the Clown</li>
+								<li>Punk!</li>
+
+								<li data-role="list-divider">Q</li>
+								<li>Q*Bert's Quest</li>
+								<li>Quicksilver</li>
+
+								<li data-role="list-divider">R</li>
+								<li>Race Stars</li>
+								<li>Rack 'Em Up!</li>
+								<li>Radical!</li>
+								<li>Rapid Fire</li>
+								<li>Raven</li>
+								<li>Ready...Aim...Fire!</li>
+								<li>Red & Ted's Road Show</li>
+								<li>Rescue 911</li>
+								<li>Revenge From Mars</li>
+								<li>Riverboat Gambler</li>
+								<li>Road Kings</li>
+								<li>Robo-War</li>
+								<li>Robocop</li>
+								<li>Rock</li>
+								<li>Rock Encore</li>
+								<li>Rocky</li>
+								<li>Roller Disco</li>
+								<li>Rolling Stones</li>
+								<li>Royal Flush Deluxe</li>
+
+								<li data-role="list-divider">S</li>
+								<li>Safe Cracker</li>
+								<li>Sahara Love</li>
+								<li>Saturn 2</li>
+								<li>Scared Stiff</li>
+								<li>Scorpion</li>
+								<li>Seawitch</li>
+								<li>Shaq Attaq</li>
+								<li>Sharp Shooter II</li>
+								<li>Sharpshooter</li>
+								<li>Silver Slugger</li>
+								<li>Silverball Mania</li>
+								<li>Sinbad</li>
+								<li>Skateball</li>
+								<li>Solar Fire</li>
+								<li>Solar Ride</li>
+								<li>Sorcerer</li>
+								<li>South Park</li>
+								<li>Space Hawks</li>
+								<li>Space Invaders</li>
+								<li>Space Rider</li>
+								<li>Space Shuttle</li>
+								<li>Space Station</li>
+								<li>Speakeasy</li>
+								<li>Speakeasy 4</li>
+								<li>Special Force</li>
+								<li>Spectrum</li>
+								<li>Spirit</li>
+								<li>Spring Break</li>
+								<li>Spy Hunter</li>
+								<li>Star Gazer</li>
+								<li>Star Light</li>
+								<li>Star Race</li>
+								<li>Star Trek</li>
+								<li>Star Trek: The Next Generation</li>
+								<li>Star Wars</li>
+								<li>Star Wars Episode I</li>
+								<li>Stargate</li>
+								<li>Stars</li>
+								<li>Stellar Airship</li>
+								<li>Stellar Wars</li>
+								<li>Stingray</li>
+								<li>Strange Science</li>
+								<li>Street Fighter II</li>
+								<li>Striker</li>
+								<li>Strikes 'N Spares</li>
+								<li>Strikes and Spares</li>
+								<li>Super Mario Bros.</li>
+								<li>Super Mario Bros. Mushroom World</li>
+								<li>Super Nova</li>
+								<li>Super Orbit</li>
+								<li>Supersonic</li>
+								<li>Surf 'n Safari</li>
+								<li>Swords of Fury</li>
+								
+								<li data-role="list-divider">T</li>
+								<li>Tag-Team Pinball</li>
+								<li>Tales of the Arabian Nights</li>
+								<li>Tee'd Off</li>
+								<li>Terminator 2: Judgment Day</li>
+								<li>The Addams Family</li>
+								<li>The Addams Family Special Collectors Edition</li>
+								<li>The Amazing Spider-Man</li>
+								<li>The Bally Game Show</li>
+								<li>The Champion Pub</li>
+								<li>The Empire Strikes Back</li>
+								<li>The Flintstones</li>
+								<li>The Games</li>
+								<li>The Getaway: High Speed II</li>
+								<li>The Incredible Hulk</li>
+								<li>The Lord of the Rings</li>
+								<li>The Lord of the Rings (Limited Edition)</li>
+								<li>The Machine: Bride of Pin·bot</li>
+								<li>The Rolling Stones (Limited Edition)</li>
+								<li>The Shadow</li>
+								<li>The Six Million Dollar Man</li>
+								<li>The Who's Tommy Pinball Wizard</li>
+								<li>Theatre of Magic</li>
+								<li>Ticket Tac Toe</li>
+								<li>Time Fantasy</li>
+								<li>Time Line</li>
+								<li>Time Machine</li>
+								<li>Time Warp</li>
+								<li>Title Fight</li>
+								<li>Torch</li>
+								<li>Totem</li>
+								<li>Touchdown</li>
+								<li>Transporter the Rescue</li>
+								<li>Tri Zone</li>
+								<li>Trident</li>
+								<li>TRON: Legacy (Limited Edition)</li>
+								<li>Twilight Zone</li>
+								<li>TX-Sector</li>
+
+								<li data-role="list-divider">U</li>
+								<li>U.S.A. Football</li>
+								<li>UltraPin</li>
+
+								<li data-role="list-divider">V</li>
+								<li>Valkyrie</li>
+								<li>Vector</li>
+								<li>Vegas</li>
+								<li>Victory</li>
+								<li>Viking</li>
+								<li>Viper Night Drivin'</li>
+								<li>Volcano</li>
+								<li>Voltan Escapes Cosmic Doom</li>
+
+								<li data-role="list-divider">W</li>
+								<li>Warlok</li>
+								<li>Waterworld</li>
+								<li>Whirlwind</li>
+								<li>White Water</li>
+								<li>WHO dunnit</li>
+								<li>Wild Fyre</li>
+								<li>Wild Schütz</li>
+								<li>Wipe Out</li>
+								<li>World Challenge Soccer</li>
+								<li>World Cup</li>
+								<li>World Cup Soccer</li>
+
+								<li data-role="list-divider">X</li>
+								<li>X's & O's</li>
+								<li>Xenon</li>
+
+								<li data-role="list-divider">Y</li>
+
+								<li data-role="list-divider">Z</li>
+
+							</ul>
+						</li>
+						<li>
+							<h3>Electro-Mechanical</h3>
+							<p>EM machines use mechanical reels that spin to display the score.</p>
+							<ul data-role="listview" data-filter="true" data-filter-placeholder="Search machine name..." data-filter-theme="b"> 
+								<li data-role="list-divider">A</li>
+								<li>A.G. Football</li>
+								<li>A.G. Soccer-Ball</li>
+								<li>Agents 777</li>
+								<li>Airborne</li>
+								<li>Airborne Avenger</li>
+								<li>Al's Garage Band Goes On a World Tour</li>
+								<li>Algar</li>
+								<li>Ali</li>
+								<li>Alien Poker</li>
+								<li>Alien Star</li>
+								<li>Amazon Hunt</li>
+								<li>Amazon Hunt II</li>
+								<li>Amazon Hunt III</li>
+								<li>Andromeda</li>
+								<li>Apocalypse Now</li>
+								<li>Arena</li>
+								<li>Asteroid Annie and the Aliens</li>
+								<li>Atlantis</li>
+								<li>Attack from Mars</li>
+								<li>Attila the Hun</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--/content-primary -->
+			</div>
+		</div>
+	</body>
+
+
+</html>
